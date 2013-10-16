@@ -1,0 +1,35 @@
+.font-enyo-icon {
+
+  @blue: #1d9eec;
+
+  /**
+   * Icon height set per Onyx standard:
+   * https://github.com/enyojs/onyx/blob/master/source/Icon.js#L5
+   */
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  cursor: pointer;
+
+  i {
+    text-align: center;
+    font-size: 24px;
+    color: #ddd;
+
+    text-shadow: 2px 2px 5px fade(#333, 80%),
+      0px 0px 3px fade(#333, 90%);
+
+    &:enabled:active {
+      color: white;
+      text-shadow: 2px 2px 4px @blue,
+        -2px -2px 4px @blue,
+        2px -2px 4px @blue,
+        -2px 2px 4px @blue;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+    }
+  }
+}
+
