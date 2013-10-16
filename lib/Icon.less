@@ -1,35 +1,53 @@
-.font-enyo-icon {
+.font-onyx {
 
-  @blue: #1d9eec;
+  @shadow: fade(#222, 97%);
+  @shadow-glow: #0099FF;
 
-  /**
-   * Icon height set per Onyx standard:
-   * https://github.com/enyojs/onyx/blob/master/source/Icon.js#L5
-   */
-  width: 32px;
-  height: 32px;
-  padding: 4px;
-  cursor: pointer;
+  @icon: #ddd;
+  @icon-glow: white;
 
-  i {
-    text-align: center;
-    font-size: 24px;
-    color: #ddd;
+  display: inline-block !important;
 
-    text-shadow: 2px 2px 5px fade(#333, 80%),
-      0px 0px 3px fade(#333, 90%);
+  * & {
 
-    &:enabled:active {
-      color: white;
-      text-shadow: 2px 2px 4px @blue,
-        -2px -2px 4px @blue,
-        2px -2px 4px @blue,
-        -2px 2px 4px @blue;
-    }
+    /**
+     * Icon size set per Onyx standard:
+     * https://github.com/enyojs/onyx/blob/master/source/Icon.js#L5
+     */
+    width: 32px;
+    height: 32px;
+    padding: 3px;
 
-    &:disabled {
-      opacity: 0.6;
+    i {
+      text-align: center;
+
+      font-size: 26px;
+      color: @icon;
+
+      text-shadow: 3px 3px 5px @shadow,
+        0px 0px 3px @shadow;
     }
   }
-}
+  
+  &.icon {
 
+    &.button {
+
+      &:not(.disabled) {
+        cursor: pointer;
+        
+        &:active {
+          i {
+            color: white;
+            text-shadow: 2px 2px 5px @shadow-glow,
+              -2px -2px 5px @shadow-glow,
+              2px -2px 5px @shadow-glow,
+              -2px 2px 5px @shadow-glow;
+          }
+        }
+      }
+    }
+
+  }
+
+}
