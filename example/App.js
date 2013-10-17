@@ -3,7 +3,7 @@ enyo.kind({
   components: [
     {kind: 'onyx.Toolbar', components: [
       {content: "Buttons", style: "width: 200px"},
-      {kind: 'font.IconButton', ontap: 'fontIconTap'},
+      {kind: 'font.IconButton', icon: 'check-sign', ontap: 'fontIconTap'},
       {kind: 'font.IconButton', icon: 'beer', ontap: 'fontIconTap'},
       {kind: 'font.IconButton', icon: 'comment', ontap: 'fontIconTap'},
       {kind: 'font.IconButton', icon: 'envelope', ontap: 'fontIconTap'},
@@ -22,11 +22,11 @@ enyo.kind({
     {name: "message", style: "color: white; height: 42px; margin-left: 12px; font-size: 20px"},
     {kind: 'onyx.Toolbar', components: [
       {content: "Icons", style: "width: 200px"},
-      {kind: 'font.Icon', icon: 'check-sign'},
+      {kind: 'font.Icon', icon: 'check-sign', options: [ 'spin' ]},
       {kind: 'font.Icon', icon: 'beer'},
       {kind: 'font.Icon', icon: 'comment'},
       {kind: 'font.Icon', icon: 'envelope'},
-      {kind: 'font.Icon', icon: 'gear'},
+      {kind: 'font.Icon', icon: 'cog', options: [ 'spin' ]},
       {kind: 'font.Icon', icon: 'sort-by-alphabet'}
     ]},
   ],
@@ -36,6 +36,6 @@ enyo.kind({
   rendered: function () {
     this.inherited(arguments);
 
-    this.$.iconButton.setIcon('check-sign');
+    this.$.icon.setIcon('cog');
   }
 });
