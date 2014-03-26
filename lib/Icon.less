@@ -15,27 +15,35 @@
     width: 32px;
     height: 32px;
     padding: 3px;
+    text-align: center;
 
-    i {
-      text-align: center;
-
-      font-size: 26px;
+    div {
+      font-size: 22px;
       color: @icon;
 
       text-shadow: 3px 3px 5px @shadow,
         0px 0px 3px @shadow;
     }
+
+    .text {
+      font-size: 12px;
+    }
   }
-  
+
+  &.text-icon {
+    width: 50px;
+    height: 40px;
+  }
+
   &.icon {
 
     &.button {
 
       &:not(.disabled) {
         cursor: pointer;
-        
+
         &:active {
-          i {
+          div {
             color: white;
             text-shadow: 2px 2px 5px @shadow-glow,
               -2px -2px 5px @shadow-glow,
