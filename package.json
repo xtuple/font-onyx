@@ -1,0 +1,32 @@
+{
+  "name": "font-onyx",
+  "version": "2.2.0",
+  "description": "Font-Awesome 3.2.1 Icons for Enyo Onyx",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "enyo-layout": "~2.2.0-a1",
+    "enyo-onyx": "~2.2.0-a0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjwebb/font-onyx.git"
+  },
+  "keywords": [
+    "enyo",
+    "onyx",
+    "font-awesome"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tjwebb/font-onyx/issues"
+  },
+  "homepage": "https://github.com/tjwebb/font-onyx"
+}
