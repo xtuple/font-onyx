@@ -1,6 +1,6 @@
 {
   "name": "font-onyx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Font-Awesome 3.2.1 Icons for Enyo Onyx",
   "main": "index.js",
   "directories": {
