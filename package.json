@@ -1,6 +1,6 @@
 {
   "name": "font-onyx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Font-Awesome 3.2.1 Icons for Enyo Onyx",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tjwebb/font-onyx.git"
+    "url": "git://github.com/xtuple/font-onyx.git"
   },
   "keywords": [
     "enyo",
@@ -23,7 +23,7 @@
   "author": "Travis Webb <me@traviswebb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjwebb/font-onyx/issues"
+    "url": "https://github.com/xtuple/font-onyx/issues"
   },
-  "homepage": "https://github.com/tjwebb/font-onyx"
+  "homepage": "https://github.com/xtuple/font-onyx"
 }
